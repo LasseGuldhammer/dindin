@@ -1,61 +1,139 @@
-<?php 
-	include('recipe.class.php');
-	include('recipe.data.php');
-?>
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Din Din</title>
-</head>
+<html>
+	<head>
 
-<body>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i" rel="stylesheet"> 
 
-<?php
+		<link rel="stylesheet" media="all" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<script src="animate.js"></script>
+		
+        <title>this needs a title</title>
+<link rel="icon" type="image/png" href="images/dindinlogofav.png">
+	</head>
+<header>
+	<?php include('header.php') ?>
+</header>
+<body onload="initiate()">
 
+<div class="flex-container">
 
-// Recipe instances
-	
-$basil_pomodoro = new Recipe("Basil Pomodoro Zucchini Pasta with Chicken", false, $ingredients_basil_pomodoro, 120, 45);
-	
-$butternut_squash = new Recipe("Butternut Squash Noodles with Shredded Brussels Sprouts, Walnuts and Caramelized Onions Yields", true, $ingredients_butternut_squash, 90, 30);
-	
-?>
-
-<h1><?php echo($basil_pomodoro->name); ?></h1>
-
-
-<ul>
-	<h3>Ingredients:</h3>
-	<?php foreach($basil_pomodoro->ingredients as $ingredient) {
-	echo "<li>" . $ingredient[0] . ", " . $ingredient[1] . "</li>";
-} ?>
-</ul>
-
-<p>Total calories: <?php echo $basil_pomodoro->calories; ?></p>
-
-<p>Total cost: </p>
-
-<p>Time to cook:</p>
-
-<h1><?php echo($butternut_squash->name); ?></h1>
+<h1 id="box">Plan your dinner for the week with one click</h1>
+<button id="action" class="button1">GENERATE</button>
 
 
-<ul>
-	<h3>Ingredients:</h3>
-	<?php foreach($butternut_squash->ingredients as $ingredient) {
-	echo "<li>" . $ingredient[0] . ", " . $ingredient[1] . "</li>";
-} ?>
-</ul>
+</div>
 
-<p>Total calories: <?php echo $butternut_squash->calories; ?></p>
+<!-- seven -->
+<div class="section group">
+	<div class="col span_1_of_7">
+	<p>MONDAY</p>
+	</div>
+	<div class="col span_1_of_7">
+	<p>TUESDAY</p>
+	</div>
+	<div class="col span_1_of_7">
+	<p>WEDNESDAY</p>
+	</div>
+	<div class="col span_1_of_7">
+	<p>THURSDAY</p>
+	</div>
+	<div class="col span_1_of_7">
+	<p>FRIDAY</p>
+	</div>
+	<div class="col span_1_of_7">
+	<p>SATURDAY</p>
+	</div>
+	<div class="col span_1_of_7">
+	<p>SUNDAY</p>
+	</div>
+</div>
 
-<p>Total cost: </p>
 
-<p>Time to cook:</p>
+<div class="flex-container">
 
+<h1>Plan your dinner for the week with one click</h1>
+<button class="button1">GENERATE</button>
+
+
+</div>
+
+<!-- five -->
+<div class="section group">
+	<div class="col span_1_of_5">
+	<p>FILTER 1</p>
+	</div>
+	<div class="col span_1_of_5">
+	<p>FILTER 2</p>
+	</div>
+	<div class="col span_1_of_5">
+	<p>FILTER 3</p>
+	</div>
+	<div class="col span_1_of_5">
+	<p>FILTER 4</p>
+	</div>
+	<div class="col span_1_of_5">
+	<p>FILTER 5</p>
+	</div>
+
+
+<!-- four -->
+</div>
+
+<div class="section group">
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
+
+</div>
+
+<div class="section group">
+
+	<div class="col span_1_of_4">
+	 <img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
+
+</div>
+
+
+
+
+
+<?php require('footer.php') ?>
 </body>
+   
+
 </html>
