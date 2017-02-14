@@ -56,6 +56,9 @@ $butternut_squash = new Recipe("Butternut Squash Noodles with Shredded Brussels 
 <p>Total cost: </p>
 
 <p>Time to cook:</p>
+<?php 
+	echo json_encode($butternut_squash);
+?>
 
 </body>
 </html>

@@ -2,14 +2,18 @@
 // Recipe class
 
 class Recipe {
+	public $number = 0;
 	public $name;
 	public $vegetarian;
 	public $ingredients;
 	public $calories;
 	public $cost;
 	public $time;
+	public $filename;
+	public $text;
 	
 	public function __construct($name, $vegetarian, $ingredients, $cost, $time) {
+		$this->number++;
 		$this->name = $name;
 		$this->vegetarian = $vegetarian;
 		$this->ingredients = $ingredients;		
