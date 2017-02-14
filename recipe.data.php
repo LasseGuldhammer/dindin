@@ -217,4 +217,58 @@ $ingredients_teriyaki_chicken = array
 		array("chicken broth", 120),
 		array("zucchini", 360)
 	);
+
+$ingredients_thyme_beet = array
+	(
+		array("beet", 460),
+		array("olive oil", 15),
+		array("garlic clove", 3),
+		array("shallot", 30),
+		array("thyme", 2),
+		array("vegetable broth", 59),
+		array("walnut", 79),
+		array("parmesan cheese", 59)
+	);
+
+$ingredients_vegan_zucchini = array
+	(
+		array("spinach", 297),
+		array("olive oil", 15),
+		array("carrot", 70),
+		array("white onion", 25),
+		array("shiitake mushroom", 98),
+		array("zucchini", 300),
+		array("sesame seed", 3),
+		array("sesame oil", 15),
+		array("honey", 10),
+		array("soy sauce", 30)
+	);
+
+$ingredients_warm_chorizo = array
+	(
+		array("chorizo", 280),
+		array("red pepper", 200),
+		array("chickpea", 400),
+		array("dried tomato", 60),
+		array("balsamic vinegar", 15),
+		array("rucola", 100)
+	);
+
+$ingredients_zucchini_spaghetti = array
+	(
+		array("cauliflower", 400),
+		array("olive oil", 30),
+		array("garlic powder", 1),
+		array("garlic clove", 6),
+		array("shallot", 27),
+		array("prosciutto", 200),
+		array("red pepper flake", 1),
+		array("zucchini", 600),
+		array("parsley", 7),
+		array("lemon zest", 1),
+		array("lemon juice", 8),
+		array("greek yogurt", 59),
+		array("parmesan cheese", 22)
+	);
+
 ?>
