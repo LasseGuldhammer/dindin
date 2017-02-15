@@ -2,7 +2,7 @@
 // Recipe class
 
 class Recipe {
-	public $number = 0;
+	public $number;
 	public $name;
 	public $vegetarian;
 	public $ingredients;
@@ -12,17 +12,19 @@ class Recipe {
 	public $filename;
 	public $text;
 	
-	public function __construct($name, $vegetarian, $ingredients, $cost, $time) {
-		$this->number++;
+	public function __construct($number, $name, $vegetarian, $ingredients, $cost, $time, $filename, $text) {
+		$this->number = $number;
 		$this->name = $name;
 		$this->vegetarian = $vegetarian;
-		$this->ingredients = $ingredients;		
+		$this->ingredients = $ingredients;
+		$this->calCal();
 		$this->cost = $cost;
 		$this->time = $time;
-		$this->cal_cal();
+		$this->filename = $filename;
+		$this->text = $text;
 	}
 	
-	public function cal_cal() {
+	public function calCal() {
 		global $ingredient_list;
 		$total_calories = 0;
 		foreach ($this->ingredients as $amount) {
