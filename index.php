@@ -1,64 +1,89 @@
-<?php 
-	include('recipe.class.php');
-	include('recipe.data.php');
-?>
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Din Din</title>
-</head>
+<html>
+	<head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i" rel="stylesheet"> 
+
+		<link rel="stylesheet" media="all" type="text/css" href="css/stylesheet.css">
+		
+        <title>this needs a title</title>
+<link rel="icon" type="image/png" href="images/dindinlogofav.png">
+	</head>
+
+<header>
+	<?php include('header.php') ?>
+</header>
 
 <body>
 
-<?php
+<div class="flex-container">
+	<h1>Plan your dinner for the week with one click</h1>
+	<button class="button1" onclick="loadDoc()">GENERATE</button>
+</div>
+
+<!-- week generator -->
+
+<div class="section group">
+
+    <div id="demo"></div>
+   
+    <script src="ajax/generator.js"></script>
 
 
-// Recipe instances
-	
-$basil_pomodoro = new Recipe("Basil Pomodoro Zucchini Pasta with Chicken", false, $ingredients_basil_pomodoro, 120, 45);
-	
-$butternut_squash = new Recipe("Butternut Squash Noodles with Shredded Brussels Sprouts, Walnuts and Caramelized Onions Yields", true, $ingredients_butternut_squash, 90, 30);
-	
-?>
-
-<h1><?php echo($basil_pomodoro->name); ?></h1>
+<!-- four -->
 
 
-<ul>
-	<h3>Ingredients:</h3>
-	<?php foreach($basil_pomodoro->ingredients as $ingredient) {
-	echo "<li>" . $ingredient[0] . ", " . $ingredient[1] . "</li>";
-} ?>
-</ul>
+<div class="section group">
 
-<p>Total calories: <?php echo $basil_pomodoro->calories; ?></p>
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
 
-<p>Total cost: </p>
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
 
-<p>Time to cook:</p>
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
 
-<h1><?php echo($butternut_squash->name); ?></h1>
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
+
+</div>
+
+<div class="section group">
+
+	<div class="col span_1_of_4">
+	 <img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+    </div>
+
+	<div class="col span_1_of_4">
+	<img src="images/400x400.jpg" alt="her er border" />
+    <h2>Recipe name</h2>
+	</div>
+
+</div>
 
 
-<ul>
-	<h3>Ingredients:</h3>
-	<?php foreach($butternut_squash->ingredients as $ingredient) {
-	echo "<li>" . $ingredient[0] . ", " . $ingredient[1] . "</li>";
-} ?>
-</ul>
-
-<p>Total calories: <?php echo $butternut_squash->calories; ?></p>
-
-<p>Total cost: </p>
-
-<p>Time to cook:</p>
-<?php 
-	echo json_encode($butternut_squash);
-?>
-
+<?php include('footer.php') ?>
 </body>
+   
+
 </html>
