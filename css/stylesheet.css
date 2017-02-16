@@ -362,3 +362,74 @@ background-color:white;
   position:relative;
 }
 
+/* Recipe images as backgrounds */
+
+.basil_pomodoro_bg {
+	background-image: url(../images/basil_pomodoro.jpg);
+	background-size: cover;
+}
+
+.butternut_squash_bg {
+	background-image: url(../images/butternut_squash.jpg);
+	background-size: cover;
+}
+
+.daikon_noodles_bg {
+	background-image: url(../images/daikon_noodles.jpg);
+	background-size: cover;
+}
+
+.egg_rocket_bg {
+	background-image: url(../images/egg_rocket.jpg);
+	background-size: cover;
+}
+
+.chicken_cacciatore_bg {
+	background-image: url(../images/chicken_cacciatore.jpg);
+	background-size: cover;
+}
+
+.paillard_chicken_bg {
+	background-image: url(../images/paillard_chicken.jpg);
+	background-size: cover;
+}
+
+.pisto_huevos_bg {
+	background-image: url(../images/pisto_huevos.jpg);
+	background-size: cover;
+}
+
+.beet_noodles_bg {
+	background-image: url(../images/beet_noodles.jpg);
+	background-size: cover;
+}
+
+.seared_steak_bg {
+	background-image: url(../images/seared_steak.jpg);
+	background-size: cover;
+}
+
+.teriyaki_chicken_bg {
+	background-image: url(../images/teriyaki_chicken.jpg);
+	background-size: cover;
+}
+
+.thyme_beet_bg {
+	background-image: url(../images/basil_pomodoro.jpg);
+	background-size: cover;
+}
+
+.vegan_zucchini_bg {
+	background-image: url(../images/vegan_zucchini.jpg);
+	background-size: cover;
+}
+
+.warm_chorizo_bg {
+	background-image: url(../images/basil_pomodoro.jpg);
+	background-size: cover;
+}
+
+.zucchini_spaghetti_bg {
+	background-image: url(../images/basil_pomodoro.jpg);
+	background-size: cover;
+}
