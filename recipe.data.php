@@ -273,7 +273,7 @@ $ingredients_zucchini_spaghetti = array
 
 // Recipe name / filename array
 
-$recipe_list = array("basil_pomodoro", "butternut_squash", "daikon_noodles", "egg_rocket", "chicken_cacciatore", "paillard_chicken", "pisto_huevos", "beet_noodles", "seared_stake", "teriyaki_chicken", "thyme_beet", "vegan_zucchini", "warm_chorizo", "zucchini_spaghetti");
+$recipe_list = array("basil_pomodoro", "butternut_squash", "daikon_noodles", "egg_rocket", "chicken_cacciatore", "paillard_chicken", "pisto_huevos", "beet_noodles", "seared_steak", "teriyaki_chicken", "thyme_beet", "vegan_zucchini", "warm_chorizo", "zucchini_spaghetti");
 
 // Recipe text descriptions
 
@@ -680,5 +680,35 @@ $recipe_texts = array
 		<li>Cook, tossing frequently, for 3-5 minutes or until zucchini noodles are al dente. Add in the cauliflower and crumble the prosciutto over the skillet, with your fingers. Give a toss and then remove from heat and stir in the Greek yogurt mixture. Toss to combine thoroughly and divide into bowls. Sprinkle with parsley, to garnish.</li>
 		</ul>"
 	);
+
+// Instantiate all recipe objects
+
+$basil_pomodoro = new Recipe(1, "Basil Pomodoro Zucchini Pasta with Chicken", false, $ingredients_basil_pomodoro, 32, 45, $recipe_list[0], $recipe_texts[0]);
+
+$butternut_squash = new Recipe(2, "Butternut Squash Noodles with Shredded Brussels Sprouts, Walnuts and Caramelized Onions", true, $ingredients_butternut_squash, 60, 45, $recipe_list[1], $recipe_texts[1]);
+
+$daikon_noodles = new Recipe(3, "Daikon Noodles and Broccolini with Asian Pork Meatballs", false, $ingredients_daikon_noodles, 124, 45, $recipe_list[2], $recipe_texts[2]);
+
+$egg_rocket = new Recipe(4, "Egg & Rocket Pizzas", true, $ingredients_egg_rocket, 23, 45, $recipe_list[3], $recipe_texts[3]);
+
+$chicken_cacciatore = new Recipe(5, "Lighter chicken cacciatore", false, $ingredients_chicken_cacciatore, 62, 45, $recipe_list[4], $recipe_texts[4]);
+
+$paillard_chicken = new Recipe(6, "Paillard of chicken with lemon & herbs", false, $ingredients_paillard_chicken, 66, 45, $recipe_list[5], $recipe_texts[5]);
+
+$pisto_huevos = new Recipe(7, "Pisto con huevos", false, $ingredients_pisto_huevos, 48, 45, $recipe_list[6], $recipe_texts[6]);
+
+$beet_noodles = new Recipe(8, "Roasted beet noodles with pesto and baby kale", true, $ingredients_beet_noodles, 16, 45, $recipe_list[7], $recipe_texts[7]);
+
+$seared_steak = new Recipe(9, "Seared stea with celery & pepper caponata", false, $ingredients_seared_steak, 75, 45, $recipe_list[8], $recipe_texts[8]);
+
+$teriyaki_chicken = new Recipe(10, "Teriyaki chicken, bok choy and corn chorizo noodles", false, $ingredients_teriyaki_chicken, 26, 45, $recipe_list[9], $recipe_texts[9]);
+
+$thyme_beet = new Recipe(11, "Thyme beet risotto with walnuts", true, $ingredients_thyme_beet, 11, 45, $recipe_list[10], $recipe_texts[10]);
+
+$vegan_zucchini = new Recipe(12, "Vegan zucchini noodle japchae", true, $ingredients_vegan_zucchini, 23, 45, $recipe_list[11], $recipe_texts[11]);
+
+$warm_chorizo = new Recipe(13, "Warm chorizo & chickpea salad", false, $ingredients_warm_chorizo, 65, 45, $recipe_list[12], $recipe_texts[12]);
+
+$zucchini_spaghetti = new Recipe(14, "Zucchini spaghetti, crispy prosciutto and roasted cauliflower with lemon-parmesan sauce", false, $ingredients_zucchini_spaghetti, 37, 45, $recipe_list[13], $recipe_texts[13]);
 
 ?>

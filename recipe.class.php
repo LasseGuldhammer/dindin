@@ -22,8 +22,8 @@ class Recipe {
 		$this->time = $time;
 		$this->filename = $filename;
 		$this->text = $text;
-	}
-	
+}
+	// Calculate calories function
 	public function calCal() {
 		global $ingredient_list;
 		$total_calories = 0;

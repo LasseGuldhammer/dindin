@@ -1,3 +1,7 @@
+<?php 
+	include('recipe.class.php');
+	include('recipe.data.php');
+?>
 <!DOCTYPE html>
 <html>
 	<head>
