@@ -699,7 +699,7 @@ $pisto_huevos = new Recipe(7, "Pisto con huevos", false, $ingredients_pisto_huev
 
 $beet_noodles = new Recipe(8, "Roasted beet noodles with pesto and baby kale", true, $ingredients_beet_noodles, 16, 25, $recipe_list[7], $recipe_texts[7]);
 
-$seared_steak = new Recipe(9, "Seared stea with celery & pepper caponata", false, $ingredients_seared_steak, 75, 10, $recipe_list[8], $recipe_texts[8]);
+$seared_steak = new Recipe(9, "Seared steak with celery & pepper caponata", false, $ingredients_seared_steak, 75, 10, $recipe_list[8], $recipe_texts[8]);
 
 $teriyaki_chicken = new Recipe(10, "Teriyaki chicken, bok choy and corn chorizo noodles", false, $ingredients_teriyaki_chicken, 26, 25, $recipe_list[9], $recipe_texts[9]);
 

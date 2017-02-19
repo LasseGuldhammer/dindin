@@ -34,47 +34,74 @@
     <script src="ajax/generator.js"></script>
 
 
-<!-- four -->
-
-<div class="section group">
-
-	<div class="col span_1_of_4">
-	 <img src="images/400x400.jpg" alt="her er border" />
-    <h2>Recipe name</h2>
-    </div>
-
-	<div class="col span_1_of_4">
-	<img src="images/400x400.jpg" alt="her er border" />
-    <h2>Recipe name</h2>
-	</div>
-
-	<div class="col span_1_of_4">
-	<img src="images/400x400.jpg" alt="her er border" />
-    <h2>Recipe name</h2>
-    </div>
-
-	<div class="col span_1_of_4">
-	<img src="images/400x400.jpg" alt="her er border" />
-    <h2>Recipe name</h2>
-	</div>
-
-</div>
+<!-- All Recipies section starts here -->
 
 <?php
+	// Function that echoes out a recipe's name and filename inside HTML elements
 	function displayRecipe($recipe) {
-		echo '<div class="col span_1_of_4 ' . $recipe->filename . '_bg weekstyle">';
-		echo '<h3>' . $recipe->name . '</h3>';
-		echo '</div>';
-	}
+		echo '<div id="' . $recipe->filename . '" class="col span_1_of_4 ' . $recipe->filename . '_bg weekstyle" onclick="assignRecipe()"><h3 class="green_bg">' . $recipe->name . '</h3></div><div class="popup"><span class="popuptext" id="myPopup">A Simple Popup!</span></div>';
+	}	
 ?>
 
-<section>
-	<h1>All Recipes</h1>
+<script>
+	
+	function assignRecipe() {
+		var popup = document.getElementsById("myPopup");
+		popup.classList.toggle("show");
+	}	
+</script>
+
+<h2 class="text-center">ALL RECIPES</h2>
+<hr>
+
+<!-- Row of four recipes -->
+<section>	
 	<div class="section group">
-	<?php 
-		foreach($recipe_objects as $recipe) {
-		displayRecipe($recipe);
-	} 
+	<?php
+		
+		for($i = 0; $i < 4; $i++) {
+			displayRecipe($recipe_objects[$i]);
+		}
+		
+	?>
+	</div>
+</section>
+
+<!-- Row of four recipes -->
+<section>
+	<div class="section group">
+	<?php
+		
+		for($i = 4; $i < 8; $i++) {
+			displayRecipe($recipe_objects[$i]);
+		}
+		
+	?>
+	</div>
+</section>
+
+<!-- Row of four recipes -->
+<section>
+	<div class="section group">
+	<?php
+		
+		for($i = 8; $i < 12; $i++) {
+			displayRecipe($recipe_objects[$i]);
+		}
+		
+	?>
+	</div>
+</section>
+
+<!-- Row of four recipes -->
+<section>
+	<div class="section group">
+	<?php
+		
+		for($i = 12; $i < 14; $i++) {
+			displayRecipe($recipe_objects[$i]);
+		}
+		
 	?>
 	</div>
 </section>
