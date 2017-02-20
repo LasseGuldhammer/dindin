@@ -39,17 +39,9 @@
 <?php
 	// Function that echoes out a recipe's name and filename inside HTML elements
 	function displayRecipe($recipe) {
-		echo '<div id="' . $recipe->filename . '" class="col span_1_of_4 ' . $recipe->filename . '_bg weekstyle" onclick="assignRecipe()"><h3 class="green_bg">' . $recipe->name . '</h3></div><div class="popup"><span class="popuptext" id="myPopup">A Simple Popup!</span></div>';
+		echo '<div id="' . $recipe->filename . '" class="col span_1_of_4 ' . $recipe->filename . '_bg weekstyle" onclick="assignRecipe()"><h3 class="green_bg">' . $recipe->name . '</h3></div>';
 	}	
 ?>
-
-<script>
-	
-	function assignRecipe() {
-		var popup = document.getElementsById("myPopup");
-		popup.classList.toggle("show");
-	}	
-</script>
 
 <h2 class="text-center">ALL RECIPES</h2>
 <hr>
