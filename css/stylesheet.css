@@ -1,222 +1,443 @@
+ 
+
+
+body {margin:0;}
 
 
 
-
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    
-  
-    
-    /*background for the modal cut for the UI missing ; to deactivate*/
-    background-color: rgb(0,0,0) /* Fallback color */
-    background-color: rgba(0,0,0,0.4) /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-      
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close:hover,
-.close:focus {
-    color: #000;
+ .button1 {
+ background-color: white; 
+    color:#252525; 
+    border: 5px solid #252525;;
+    padding: 16px 32px;
+    text-align: center;
     text-decoration: none;
-    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
 }
 
 
+.button1:hover {
+    background-color:#252525;
+    color: white;
+
+}
+
+
+ .button2 {
+ background-color:transparent; 
+    color:white; 
+    border: 5px solid white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+   
+  
+
+}
+
+
+.button2:hover {
+    background-color:#a5cc3c;
+    color: white;
+
+}
+
+
+ .button3 {
+ background-color:white; 
+    color:#a5cc3c; 
+    border: 5px solid #a5cc3c;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+   
+  
+
+}
+
+
+.button3:hover {
+    background-color:#a5cc3c;
+    color: white;
+
+}
+
+.movebutton {
+    padding-top:500px;
+position:absolute;}
+
+.movebutton2 {
+
+    padding-bottom:50px;}
 
 
 
-/*FONTS*/
+.center { 
+
+ justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+    margin-top:-15px;
+   
+}
+ 
+.covertext {padding-top:160px; 
+
+color:white}
+.footertext {
+
+color:white}
+
+ .logo {
+
+
+position:absolute;
+padding-bottom:220px;
+text-align:center;
+width:20%;
+height:auto;
+align-content: center;
+  }
+  
+   .footerlogo {
+
+
+text-align:center;
+width:8%;
+height:auto;
+align-content: center;
+  }
+ 
+ .arrow {
+
+
+position:absolute;
+
+padding-top:320px;
+width:4%;
+height:auto;
+  }
+
+
+
+ /*this is the text svg animation*/
+ 
+ /*setja position:absolute + padding færir upp og niður*/
+ .topanimation1 {
+     padding-bottom:450px;
+    width: 50px;
+    height: 25px;
+    font-weight: bold;
+     position: absolute;
+    -webkit-animation: moveone 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: moveone 1.5s forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+.topanimation1 {-webkit-animation-timing-function: ease-in-out;}
+
+
+/* Standard syntax */
+.topanimation1 {animation-timing-function: ease-in-out;}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes moveone {
+    from {left:-100px;}
+    to {left: 920;}
+}
+
+/* Standard syntax */
+@keyframes moveone {
+    from {left: -100px;}
+    to {left: 920px;}
+}
+
+.topanimation2 {
+ padding-bottom:450px;
+    width: 50px;
+    height: 25px;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation: movetwo 5s infinite; /* Safari 4.0 - 8.0 */
+    /*change the animation tag to the same one in the keyframe*/
+    animation: movetwo 1.5s forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+.topanimation2 {-webkit-animation-timing-function: ease-in-out;}
+
+
+/* Standard syntax */
+.topanimation2 {animation-timing-function: ease-in-out;}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes movetwo {
+    from {right:-100px;}
+    to {right: 930px;}
+}
+
+/* Standard syntax */
+@keyframes movetwo {
+    from {right: -100px;}
+    to {right: 930px;}
+}
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+  /*FONTS*/
 
 h1{font-family: 'Roboto', sans-serif;
+color:#252525;
 }
 h2{font-family: 'Roboto', sans-serif;
    font-weight: 700;
+   font-size:24px;
+   color:#252525;
 }
+
 h3{font-family: 'Roboto', sans-serif;
-   font-weight: 300;
+   font-weight: 400;
+   color:#252525;
 }
 p{font-family: 'Roboto', sans-serif;
-
+font-weight: 300;
+color:#252525;
 }
-
-
-
-/*  TOP NAV MENU  */
-
-body {margin:1;}
- /* Remove margins and padding from the list, and add a black background color */
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #a5cc3c;
   
-}
-
-/* Float the list items side by side */
-ul.topnav li {float: right;
-margin:20px;
-padding-bottom:10px;
-
-}
-
-/*Style the logo*/
-.navlogo { position:absolute;
-margin-bottom:10px;
-
-}
-
-/*Style the name*/
-.navname {
-           padding-left:170px;
-           position:absolute;
-
-  color:white;
-  font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Style the links inside the list items */
-ul.topnav li a {
-    margin-top:10px;
-    display: inline-block;
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-   
-}
-
-/* Change background color of links on hover */
-ul.topnav li a:hover {color: #252525;
-
-}
-
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
-
-
-/*Add media queries*/
-/*:not(:first-child) bætt framan við ul.topnav li til að halda home skritinni*/
- /* When the screen is less than 920 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:920px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:920px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
+h4 {
+  
+  font-family: 'Playfair Display', serif;
+  font-weight: 700i;
+  font-size:24px;
+  position:relative;
+color:#252525;
   }
 
- 
-}
-  /*this makes the navlogo dissapear in the responsive menu*/
-ul.topnav.responsive li.navlogo{display:none;}
 
-
-/* this makes the navname dissapear in the responsive menu*/
-ul.topnav.responsive li.navname{display:none;}
-
-
-.flex-container {
+  /*flex boxes*/
+  
+  .flex-cover {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align:center;
+  height:600px;
 
-    background-image: url("1280x1024.jpg");
-    height:500px;
-    padding:10px;
+    margin-bottom:10px;
 
-   
+   background-image: url(../images/cover.jpg);
+	background-size: cover;
+	background-position: center;
     }
 
+/* no clue what this does for the flex box*/
 .flex-item:nth-child(1) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
    
     }
+    
 
-    .flex footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: 100px;
-  background-color:#a5cc3c;
-  color:white;
-    }
 
-    .flex-container-week {
+
+  .flex-container2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-     height: 100px;
-  background-color:white;
+    text-align:center;
+    height:100px;
+    padding:10px;
+   
+    color:white;
+
+   
     }
 
+    .flex-container3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+    height:150px;
+    padding:10px;
+background-color:   #252525;
+    color:white;
+
+   
+    }
+
+  .splitter{
+    display: flex;
+    flex-wrap: nowrap;
+    height:5px;
+    background-color:#a5cc3c;
+    
+
+
+    }
+
+
+  
+
+
+
+
+/* ---------------------------------------------------- The Modal ----------------------------------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    text-align:left;
+   
+  
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #252525;
+    width: 80%;
+    
+  
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.2s;
+    animation-name: animatetop;
+    animation-duration: 0.2s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-200px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-200px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #252525;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #a5cc3c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #a5cc3c;
+    color: white;
+    text-align:right;
+    
+}
+
+ .modal-button {
+ background-color: white; 
+    color: color:#252525; 
+    border: 5px solid #252525;;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+
+
+.modal-button:hover {
+    background-color:#252525;
+    color: white;
+
+
+}
+
+
+/*---------------------------------------responsive css grid-------------------------------------------------------*/
 
   /*  SECTIONS  */
 .section {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
+    
 }
+
 
 /*  COLUMN SETUP  */
 .col {
@@ -226,23 +447,11 @@ ul.topnav.responsive li.navname{display:none;}
   background-color:white;
   text-align:center;
   position:relative;
+  
  
-  
-  
-}
-
-/*  style the week column  */
-
-.weekstyle { 
-
-background-color:white;
-
 }
 
 
-.col:hover{color:#a5cc3c;
-
-}
 
 .col:first-child { margin-left: 0; }
 
@@ -251,6 +460,26 @@ background-color:white;
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
+
 /*  GRID OF SEVEN  */
 .span_7_of_7 {
 	width: 100%;
@@ -286,79 +515,145 @@ background-color:white;
 	.span_1_of_7, .span_2_of_7, .span_3_of_7, .span_4_of_7, .span_5_of_7, .span_6_of_7, .span_7_of_7 { width: 100%; }
 }
 
-/*  GRID OF FIVE  */
-.span_5_of_5 {
-	width: 100%;
-}
-.span_4_of_5 {
-	width: 79.68%;
-}
-.span_3_of_5 {
-	width: 59.36%;
-}
-.span_2_of_5 {
-	width: 39.04%;
-}
-.span_1_of_5 {
-	width: 18.72%;
-}
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
-	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
-}
-
-
-/*  GRID OF FOUR  */
-.span_4_of_4 {
-	width: 100%;
-}
-.span_3_of_4 {
-	width: 74.6%;
-}
-.span_2_of_4 {
-	width: 49.2%;
-}
-.span_1_of_4 {
-	width: 23.8%;
-}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
 
 
-  .button1 {
- background-color: white; 
-    color: black; 
-    border: 2px solid black;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.2s; /* Safari */
-    transition-duration: 0.2s;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-.button1:hover {
-    background-color:black;
-    color: white;
-
-}
-      /*responsive images*/ 
-   
-    img {
+  img {
     width: 100%;
     height: auto;
-  position:relative;
+  
 }
 
+.modalimg{
+    width: 5%;
+    height: 10%;
+ 
+margin-bottom:10px;
+
+}
+
+/* Recipe images as backgrounds */
+
+.basil_pomodoro_bg {
+	background-image: url(../images/basil_pomodoro.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.butternut_squash_bg {
+	background-image: url(../images/butternut_squash.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.daikon_noodles_bg {
+	background-image: url(../images/daikon_noodles.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.egg_rocket_bg {
+	background-image: url(../images/egg_rocket.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.chicken_cacciatore_bg {
+	background-image: url(../images/chicken_cacciatore.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.paillard_chicken_bg {
+	background-image: url(../images/paillard_chicken.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.pisto_huevos_bg {
+	background-image: url(../images/pisto_huevos.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.beet_noodles_bg {
+	background-image: url(../images/beet_noodles.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.seared_steak_bg {
+	background-image: url(../images/seared_steak.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.teriyaki_chicken_bg {
+	background-image: url(../images/teriyaki_chicken.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.thyme_beet_bg {
+	background-image: url(../images/thyme_beet.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.vegan_zucchini_bg {
+	background-image: url(../images/vegan_zucchini.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.warm_chorizo_bg {
+	background-image: url(../images/warm_chorizo.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.zucchini_spaghetti_bg {
+	background-image: url(../images/zucchini_spaghetti.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.weekstyle {
+	border:solid 2px #252525;
+	height: 200px;
+}
+
+.zucchini_spaghetti_bg {
+	background-image: url(../images/zucchini_spaghetti.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    }
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
